@@ -1,0 +1,10 @@
+{
+    "name" : "frontend-bundle",
+    "version" : "0.0.1",
+    "dependencies" : {
+        "atomify": "~3.1.3"
+    },
+    "scripts": {
+        "install": "atomify -j app/js/index.js -t funkify -c [ app/css/index.less --assets [ --dest dist/images/ --prefix dist/images/ ] ] -o dist/bundle"
+    }
+}
